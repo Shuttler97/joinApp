@@ -1,0 +1,48 @@
+.sidenav-container {
+  height: 100vh;
+  position: relative;
+  &__side {
+    background-color: #1F2228;
+    width: 100px;
+    position: relative;
+    &-profile-img{
+      position: absolute;
+      bottom: 0;
+    }
+    .mat-drawer-inner-container {
+      overflow: hidden;
+    }
+    &-logo {
+      width: 80px;
+      height: auto;
+    }
+    ul{
+      list-style: none;
+    margin-top: 30px;
+    .item{
+      padding: 2em 1.8em;
+      &:hover{
+      background-color: #424242;
+      }
+      &:hover li{
+        color: $success;
+
+      }
+
+    }
+      li {
+        color: $light-grey;
+        i{
+          opacity: .8;
+          font-size: 30px
+
+        }
+      }
+    }
+  }
+  &__side-profile_img {
+    position: absolute;
+    bottom: 10px;
+
+  }
+}

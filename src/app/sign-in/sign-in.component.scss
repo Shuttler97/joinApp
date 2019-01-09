@@ -1,0 +1,13 @@
+.signInCard{
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  min-height: 330px;
+  position: absolute;
+  top: -5%;
+  right:20px;
+  transition: all .4s;
+  min-width: 350px;
+  }
+mat-card{
+  border-radius: 10px!important;
+}

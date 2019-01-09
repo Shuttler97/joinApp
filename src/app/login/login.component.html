@@ -1,0 +1,27 @@
+<div class="container ">
+  <div class="d-flex flex-row flex-space-between" appClickOutside  >
+    <div class="w-60 d-flex " style="padding: 60px " *ngIf="!showSignUpForm">
+      <h3 class="header">Don't have an account</h3>
+      <p>Create a account and
+        enjoy the <br>services </p>
+      <div style="padding: 30px 0px">
+        <button class="stroked-button" (click)="showSignUpDialog()">Sign Up</button>
+      </div>
+    </div>
+    <div class="w-60 d-flex " style="padding: 60px" *ngIf="showSignUpForm">
+      <app-sign-up></app-sign-up>
+    </div>
+    <div class="w-40" style="padding: 60px" *ngIf="!showSignInForm">
+      <h3 class="header">
+        Have an account ?
+      </h3>
+      <p>Sign in to enter you account</p>
+      <div style="padding: 50px 0px">
+        <button class="stroked-button" (click)="showSignInDialog()">Sign In</button>
+      </div>
+    </div>
+    <div class="w-40 " style="padding: 60px" *ngIf="showSignInForm">
+      <app-sign-in></app-sign-in>
+    </div>
+  </div>
+</div>

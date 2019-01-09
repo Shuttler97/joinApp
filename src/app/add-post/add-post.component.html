@@ -1,0 +1,19 @@
+<div class="flex-column" >
+  <div  class="flex-row" style="padding: 10px; border-bottom: 1px dotted #cccccc">
+    <button class="btn"   (click)="ImageInput.click()">
+        <img src="../../assets/image_thumbnail.png">Images / Photos
+        <input #ImageInput type="file"
+               accept="image/x-png,image/gif,image/jpeg"  style="display:none;" />
+    </button>
+    <button class="btn"  (click)="attachInput.click()">
+        <img  src="../../assets/attach.png">Links / Docs
+        <input #attachInput type="file"
+               accept="image/x-png,image/gif,image/jpeg"  style="display:none;">
+    </button>
+  </div>
+  <textarea placeholder="What's your mind ?" #inputText  matInput rows="4" ></textarea>
+  <div class="flex-row flex-end">
+    <button mat-flat-button style="background-color: #448AFF;color: white ; margin-top: 5px" (click)="postButtonClicked()">
+      <p><b>Post</b></p></button>
+  </div>
+</div>

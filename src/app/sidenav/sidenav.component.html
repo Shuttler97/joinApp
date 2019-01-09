@@ -1,0 +1,50 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav class="sidenav-container__side" mode="side" opened>
+    <div class="d-flex flex-column flex-align-center flex-justify-start">
+      <img class="sidenav-container__side-logo" src="../../assets/join-logo-xl.png" alt="logo">
+      <ul>
+        <div class="item">
+          <li matTooltip="Groups" [matTooltipHideDelay]="500">
+            <i class="fas fa-users"></i>
+          </li>
+        </div>
+        <div class="item">
+          <li matTooltip="Messaging" [matTooltipHideDelay]="500">
+            <i class="far fa-comments"></i>
+          </li>
+        </div>
+        <div class="item">
+          <li matTooltip="Notifications" [matTooltipHideDelay]="500">
+            <i class="far fa-bell"></i>
+          </li>
+        </div>
+      </ul>
+      <div class="sidenav-container__side-profile_img">
+        <a routerLink=""><img src="../../assets/avatar2.png" alt="image" style="border-radius: 50%" height="60" width="60"></a>
+      </div>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content class="sidenav-container__main">
+    <app-top-nav></app-top-nav>
+    <div style="margin: 50px 30%">
+      <app-post-bar (addNewPost)="updatePost($event)" ></app-post-bar>
+    </div>
+    <div style="margin: 50px 30%">
+    <app-post-card
+      *ngFor="let post of posts | invert">
+      <p appColor>{{post}}</p>
+    </app-post-card>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+
+
+
+
+
+
+

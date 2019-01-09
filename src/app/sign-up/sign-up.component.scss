@@ -1,0 +1,12 @@
+.signUpCard {
+  transition: all .4s;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  position: absolute;
+  top: -5%;
+  left: 20px;
+  min-width: 350px;
+ }
+mat-card{
+  border-radius: 10px;
+}

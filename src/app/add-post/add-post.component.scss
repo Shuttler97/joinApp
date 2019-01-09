@@ -1,0 +1,30 @@
+i{
+  font-size:15px;
+  color: #9E9E9E;
+}
+button:focus {
+  outline: none!important;
+  border: none!important;
+}
+img{
+  height: 15px;
+  width: 15px;
+  padding-right: 5px;
+}
+.image {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50%;
+}
+.btn {
+  color: 	black;
+  border-radius: 10px;
+  padding: 8px;
+  border:1px white solid;
+  cursor: pointer;
+  width: 20%;
+}
+.btn:hover{
+  background:	rgba(0, 0, 0, .4);
+  color: rgba(33, 33, 33, .8);
+}

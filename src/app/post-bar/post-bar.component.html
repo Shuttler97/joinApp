@@ -1,0 +1,25 @@
+<mat-card >
+  <div class="d-flex flex-column">
+    <div class="flex-row">
+      <img src="../../assets/avatar2.png" class="image" alt="image" >
+      <button  (click)="openDialog()" style="text-align: start; padding:15px 15px 20px 10px; font-size: 18px; width: 100%;
+      color:#616161;cursor: text;border: none; background-color: white ">
+        What's your mind ?</button>
+    </div>
+    <div class="flex-row">
+      <button class="btn"  (click)="openDialog()">
+          <img src="../../assets/image_thumbnail.png" alt="Image">Images / Photos
+          <input #ImageInput type="file"
+                 accept="image/x-png,image/gif,image/jpeg"  style="display:none;" />
+      </button>
+      <button class="btn"  (click)="openDialog()">
+          <img  src="../../assets/attach.png">Links / Docs
+          <input #attachInput type="file"
+                 accept="image/x-png,image/gif,image/jpeg"  style="display:none;">
+      </button>
+      <button class="btn"  (click)="openDialog()">
+          <i class="fas fa-ellipsis-h"></i>
+      </button>
+    </div>
+  </div>
+</mat-card>

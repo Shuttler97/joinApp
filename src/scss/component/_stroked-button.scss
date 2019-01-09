@@ -1,0 +1,12 @@
+.stroked-button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: $light-white;
+    color: $light-black;
+  }
+}

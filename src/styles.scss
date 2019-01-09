@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import "theme";
+@import "scss/base/base";
+@import "scss/custom";
+@import "scss/abstract/variables";
+@import "scss/layout/header";
+@import "scss/component/stroked-button";
+@import "scss/component/sidenav";
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Krub');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+@import url('https://fonts.googleapis.com/css?family=KoHo:300');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');

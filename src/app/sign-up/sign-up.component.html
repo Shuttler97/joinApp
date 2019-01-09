@@ -1,0 +1,22 @@
+  <mat-card class="signUpCard">
+    <h3 class="header-secondary" style="padding: 20px 0px"> SignUp</h3>
+    <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+    <div class="d-flex flex-column w-100">
+      <mat-form-field style="padding:5px">
+        <input matInput type="text" placeholder="Full Name" #userName>
+      </mat-form-field>
+      <mat-form-field style="padding:5px">
+        <input matInput type="email" placeholder="Email Address" formControlName="email" #emailAddress>
+        <mat-error>Email is incorrect</mat-error>
+      </mat-form-field>
+      <mat-form-field style="padding:5px">
+        <input matInput type="password" placeholder="Password" formControlName="password" #password>
+        <mat-error>Password is incorrect</mat-error>
+
+      </mat-form-field>
+    </div>
+    <div class=" d-flex flex-end">
+      <button type="submit" mat-raised-button color="primary" [disabled]="signUpForm.invalid">Sign Up</button>
+    </div>
+    </form>
+  </mat-card>
